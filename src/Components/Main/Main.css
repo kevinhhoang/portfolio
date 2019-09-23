@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  max-width: 200px;
+  height: auto;
+
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.line-separation {
+  border: 1px solid #ffffff;
+  width: 600px;
+  height: 0px;
+}
+
+.hero-home .container {
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.bg-color {
+  background-color: #f4ba7f;
+}
+
+.gradient-bg span {
+  display: block;
+  position: absolute;
+  top: -150vh;
+  right: -115vw;
+  width: 300vw;
+  height: 250vh;
+  border-radius: 50%;
+
+  background-image: radial-gradient(#8eb3ca, transparent 70%);
+}
+
+.gradient-bg div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 1;
+}
+
+/* TEXT EDITS */
+ul {
+  padding: 0px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text {
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.sub-text {
+  color: #ffffff;
+  margin: 18px 0px;
+
+  display: flex;
+  justify-content: center;
+}
+
+ul > a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES FOR SCREEN VIEWING */
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 85.9375vw;
+  }
+
+  .main-text {
+    font-size: 96px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .line-separation {
+    width: 355px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-home {
+    margin-bottom: 12.5vw;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .hero-home {
+    margin-bottom: 8vw;
+  }
+}
